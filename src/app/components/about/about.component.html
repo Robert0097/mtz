@@ -1,0 +1,63 @@
+
+<div id="about" class="container mt-5" style="padding-top: 105px;margin-top: 0px !important">
+	<!-- ======= About Section ======= -->
+	<div class=" container row content mr-0 ml-0 pl-85 mt-8">
+		<div class="container about pl-0 col-lg-6" data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="center-center">
+			<h1 *ngIf= "lang =='ing'">About Us</h1>
+			<h1 *ngIf= "lang =='esp'">Nosotros</h1>
+			<br>
+			<h4 *ngIf= "lang=='ing'">Company focused on the installation and repair of communication system; we specialize in fiber optic and coaxial work</h4>
+			<h4 *ngIf= "lang=='esp'">Somos una compañia enfocada a la instalación y reparación de sistemas de comunicacions; nos especializamos en fibra óptica y en cable coaxial</h4>
+			<div class="container list" *ngIf= "lang=='ing'">
+        	<h4><span class="ion ion-ios-done-all"></span>Punctually and speed</h4>
+        	<h4><span class="ion ion-ios-done-all mr-1"></span>One month guaranty</h4>
+        	<h4><span class="ion ion-ios-done-all mr-1"></span>24 hours of support and atention</h4>
+        	</div>
+        	<div class="container list" *ngIf= "lang=='esp'">
+        	<h4><span class="ion ion-ios-done-all"></span>Puntualidad y rapidez</h4>
+        	<h4><span class="ion ion-ios-done-all mr-1"></span>Garantía por un mes</h4>
+        	<h4><span class="ion ion-ios-done-all mr-1"></span>Soporte y atención las 24 horas</h4>
+        	</div>	
+		</div>
+		<div class=" container img_about col-md-6"data-aos="fade-left" data-aos-duration="2000" data-aos-anchor-placement="center-center">
+			<img src="../../assets/img/work-process-3.png">
+		</div>
+	</div>
+	<br>
+	<br>
+
+   <section class="container contadores_principal">
+   	<div class="container row" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="center-center">
+		<div class="container col-md-3 contador">
+	   		<span class="ion ion-md-happy"></span>
+	   		<div class="contador_cantidad" [countUp]="542" [options]="options">0</div>
+	   		<h4 *ngIf="lang=='ing'">Happy Clients</h4>
+	   		<h4 *ngIf="lang=='esp'">Clientes contentos</h4>
+	   	</div>
+
+
+	   	<div class="container col-md-3 contador" >
+		   	<span class="ion ion-md-contacts"></span>
+			<div class="contador_cantidad" [countUp]="57" [options]="options">0</div>
+	   		<h4 *ngIf="lang=='ing'">Hard Workers</h4>
+	   		<h4 *ngIf="lang=='esp'">Trabajadores</h4>
+	   	</div>
+	   	<div class="container col-md-3 contador">
+	   		<span class="ion ion-md-alarm"></span>
+	  		<div class="contador_cantidad" [countUp]="778252" [options]="options">0</div>
+	   		<h4 *ngIf="lang=='ing'">Hours Of Support</h4>
+	   		<h4 *ngIf="lang=='esp'">Horas acumuladas</h4>
+	   	</div>
+	   	<div class="container col-md-3 contador">
+	   		<span class="ion ion-md-filing"></span>
+	   		<div class="contador_cantidad" [countUp]="542" [options]="options">0</div>
+	   		<h4 *ngIf="lang=='ing'">Finished projects</h4>
+	   		<h4 *ngIf="lang=='esp'">Proyectos Realizados</h4>
+	   	</div>	
+   	</div>
+   	
+   	
+   </section> 
+</div>
+
+ 
