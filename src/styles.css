@@ -28,81 +28,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #fff;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #106eea;
-  border-top-color: #e2eefd;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  display: none;
-  right: 15px;
-  bottom: 15px;
-  z-index: 99999;
-}
-
-.back-to-top i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  background: #428bca;
-  color: #fff;
-  transition: all 0.4s;
-}
-
-.back-to-top i:hover {
-  background: #f06f54;
-  color: #fff;
-}
-
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -597,10 +522,7 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------------------------------------------
 #Section
 -------------------------------------------------------------*/
-section {
-	width: 80%;
-	margin: 50px auto;
-}
+
 .contador_cantidad{
 	font-size: 30px;
 	margin: 10px 0;
@@ -655,7 +577,11 @@ section .ion-md-call{
 #about .about h4{
 	color:#55626d;
 }
-#about .list{
+#about .textoabout{
+  padding-left: 0px;
+  padding-top: 10px;
+}
+#about .list {
 	padding-left: 0px;
 	padding-top: 10px;
 }
