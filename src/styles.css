@@ -139,6 +139,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 250px;
   margin-left: 80px;
 }
+@media (max-width: 450px) {
+  #header .logo img{
+    height: 31px;
+    width: 138px;
+  }
+}
 
 @media (max-width: 992px) {
   #header {
@@ -425,13 +431,10 @@ h1, h2, h3, h4, h5, h6 {
 	color: #254b66;
 }
 
-section .ion-md-call{
-	 color:rgb(66,103,178);
-}
+
 .about{
 	margin: 0px;
 	padding-left: 85px;
-
 }
 .img_about{
 	margin: 0px;
@@ -450,6 +453,18 @@ section .ion-md-call{
     border-color: #d57a30;
     border-width: 1.5px;
     inline-size: fit-content;
+}
+@media (max-width: 992px) {
+  #about h1{
+  font-size: 37px;
+    line-height: 52px;
+    color: #0c0f79;
+    font-family: "Poppins", sans-serif;
+    border-bottom: groove;
+    border-color: #d57a30;
+    border-width: 1.5px;
+    inline-size: fit-content;
+  }
 }
 @media (max-width: 992px) {
 	#about h1{
@@ -501,6 +516,9 @@ section .ion-md-call{
 	box-sizing: border-box;
 	padding: 10px 15px;
   text-align: center;
+  max-width: 42% !important;
+  margin-bottom: 10px;
+
 }
 .contador h4{
 	font-family: Robot, Helvetica, Arial;
@@ -513,6 +531,36 @@ section .ion-md-call{
 	color: #428bca;
 	font-size: 40px;
 }
+@media (max-width: 430px) {
+ .contador_cantidad{
+  font-size: 21px;
+  margin: 10px 0;
+  font-weight: 507;
+  color: #254b66;
+}
+  .contador{
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-sizing: border-box;
+  padding: 10px 15px;
+  text-align: center;
+  max-width: 50% !important;
+  margin-bottom: 10px;
+
+}
+.contador h4{
+  font-family: Robot, Helvetica, Arial;
+  color: #55626d;
+    margin: 5px 0 30px 0px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.contador span{
+  color: #428bca;
+  font-size: 40px;
+}
+}
+
 /*----SERVICES-------*/
 #services h1{
 	font-size: 48px;
@@ -562,6 +610,15 @@ section .ion-md-call{
 #services .row span{
 	font-size: 27px;
 	color: #428bca;
+}
+@media (max-width: 430px) {
+  .servicios_principal h4{
+    font-size: 12px;
+    font-weight: 501;
+  }
+  #services .row{
+  margin-bottom: 20px;
+}
 }
 
 

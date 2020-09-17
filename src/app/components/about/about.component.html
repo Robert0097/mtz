@@ -1,14 +1,16 @@
 
-<div id="about" class="container mt-5" style="padding-top: 105px;margin-top: 0px !important">
+<div id="about" class="container mt-5" style="padding-top: 105px">
 	<!-- ======= About Section ======= -->
-	<div class=" container row content mt-8">
-		<div class="container about col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+	<div class="container" data-aos="fade-down" data-aos-duration="2000">
+		<h1 *ngIf= "lang =='ing'">About Us</h1>
+		<h1 *ngIf= "lang =='esp'">Nosotros</h1>
+	</div>
+	<div class=" container row ">
+		<div class="container about col-md-6" data-aos="fade-up" data-aos-duration="2000">
 			<div class="container textoabout" *ngIf= "lang=='ing'">
-			<h1>About Us</h1>
 			<h4>Company focused on the installation and repair of communication system; we specialize in fiber optic and coaxial work</h4>
 			</div>
 			<div class="container textoabout" *ngIf= "lang =='esp'">
-			<h1>Nosotros</h1>
 			<h4>Somos una compañia enfocada a la instalación y reparación de sistemas de comunicacions; nos especializamos en fibra óptica y en cable coaxial</h4>
 			</div>
 			<br>
@@ -23,45 +25,42 @@
         	<h4><span class="ion ion-ios-done-all mr-1"></span>Soporte y atención las 24 horas</h4>
         	</div>	
 		</div>
-		<div class=" container img_about col-md-6"data-aos="fade-left" data-aos-duration="2000">
+		<div class=" container img_about col-md-6"data-aos="fade-up" data-aos-duration="2000">
 			<img src="../../assets/img/work-process-3.png">
 		</div>
 	</div>
-	<br>
-	<br>
+	<div class="container">
+				<div class="container row mb-8" data-aos="fade-down" data-aos-duration="2000">
+					<div class="container col-md-6 contador">
+						<span class="ion ion-md-happy"></span>
+	   					<div class="contador_cantidad" [countUp]="542" [options]="options">0</div>
+	   					<h4 *ngIf="lang=='ing'">Happy Clients</h4>
+	   					<h4 *ngIf="lang=='esp'">Clientes contentos</h4>
+				   	</div>
+				   	<div class="container col-md-6 contador">
+					   	<span class="ion ion-md-contacts"></span>
+						<div class="contador_cantidad" [countUp]="57" [options]="options">0</div>
+	   					<h4 *ngIf="lang=='ing'">Hard Workers</h4>
+	   					<h4 *ngIf="lang=='esp'">Trabajadores</h4>
+				   	</div>
+				</div>	
+				<div class="container row" data-aos="fade-up" data-aos-duration="2000">
+					<div class="container col-md-6 contador">
+				   		<span class="ion ion-md-alarm"></span>
+				  		<div class="contador_cantidad" [countUp]="778252" [options]="options">0</div>
+				   		<h4 *ngIf="lang=='ing'">Hours Of Support</h4>
+				   		<h4 *ngIf="lang=='esp'">Horas acumuladas</h4>
+				   	</div>
+				   	<div class="container col-md-6 contador">
+				   		<span class="ion ion-md-filing"></span>
+				   		<div class="contador_cantidad" [countUp]="542" [options]="options">0</div>
+				   		<h4 *ngIf="lang=='ing'">Finished projects</h4>
+				   		<h4 *ngIf="lang=='esp'">Proyectos Realizados</h4>
+				   	</div>
+				</div>
+			</div>
 
-   <section class="container contadores_principal">
-   	<div class="container row" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="center-center">
-		<div class="container col-md-3 contador">
-	   		<span class="ion ion-md-happy"></span>
-	   		<div class="contador_cantidad" [countUp]="542" [options]="options">0</div>
-	   		<h4 *ngIf="lang=='ing'">Happy Clients</h4>
-	   		<h4 *ngIf="lang=='esp'">Clientes contentos</h4>
-	   	</div>
-
-
-	   	<div class="container col-md-3 contador" >
-		   	<span class="ion ion-md-contacts"></span>
-			<div class="contador_cantidad" [countUp]="57" [options]="options">0</div>
-	   		<h4 *ngIf="lang=='ing'">Hard Workers</h4>
-	   		<h4 *ngIf="lang=='esp'">Trabajadores</h4>
-	   	</div>
-	   	<div class="container col-md-3 contador">
-	   		<span class="ion ion-md-alarm"></span>
-	  		<div class="contador_cantidad" [countUp]="778252" [options]="options">0</div>
-	   		<h4 *ngIf="lang=='ing'">Hours Of Support</h4>
-	   		<h4 *ngIf="lang=='esp'">Horas acumuladas</h4>
-	   	</div>
-	   	<div class="container col-md-3 contador">
-	   		<span class="ion ion-md-filing"></span>
-	   		<div class="contador_cantidad" [countUp]="542" [options]="options">0</div>
-	   		<h4 *ngIf="lang=='ing'">Finished projects</h4>
-	   		<h4 *ngIf="lang=='esp'">Proyectos Realizados</h4>
-	   	</div>	
-   	</div>
-   	
-   	
-   </section> 
+ 
 </div>
 
  
