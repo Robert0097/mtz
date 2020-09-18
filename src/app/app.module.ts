@@ -18,7 +18,7 @@ import { ContactComponent } from './components/contact/contact.component';
     ContactComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     CountUpModule
   ],

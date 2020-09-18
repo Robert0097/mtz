@@ -1,5 +1,7 @@
 import { Component, DoCheck } from '@angular/core';
 import { Meta, Title} from '@angular/platform-browser';
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 
 
@@ -15,6 +17,7 @@ public lenguaje:number = 2;
 public lang;
 
     constructor(
+      @Inject(PLATFORM_ID) private platformId: object,
        private titleService : Title,
        private meta: Meta
       ) {
@@ -24,7 +27,9 @@ public lang;
         	}
 	ngOnInit(){
   	console.log('Webapp cargada correctamente');
-
+      if (isPlatformBrowser(this.platformId)) {
+        localStorage.setItem('lang',"2");
+    }
   }
   list: any = [
     {id: 1, name: 'Spanish'},
@@ -57,16 +62,17 @@ public lang;
   }
 
   ngDoCheck(){
-  	this.lenguaje =+localStorage.getItem('lang');
-  	if(this.lenguaje == 1){
-  		this.lang = 'esp';
-  	}else{
-  		this.lang = 'ing';
-  	}
-  }
-
- 
-
-
- 
+      if (isPlatformBrowser(this.platformId)) {
+            this.lenguaje =+localStorage.getItem('lang');
+            if(!localStorage||localStorage==null){
+              this.lenguaje==2;
+            }
+            if(this.lenguaje == 1){
+              this.lang = 'esp';
+            }else{
+              this.lang = 'ing';
+            }
+      }
+  	
+   }
 }
