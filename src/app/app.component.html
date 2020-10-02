@@ -18,20 +18,20 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto mr-5">
       <li class="nav-item">
-        <a class="nav-link" (click)="scrollh()" *ngIf= "lang =='ing'">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-link" (click)="scrollh()" *ngIf= "lang =='esp'">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-link pointer" (click)="scrollh()" *ngIf= "lang =='ing'">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link pointer" (click)="scrollh()" *ngIf= "lang =='esp'">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" (click)="scrolla()" *ngIf= "lang =='ing'">About Us</a>
-        <a class="nav-link" (click)="scrolla()" *ngIf= "lang =='esp'">Nosotros</a>
+        <a class="nav-link pointer" (click)="scrolla()" *ngIf= "lang =='ing'">About Us</a>
+        <a class="nav-link pointer" (click)="scrolla()" *ngIf= "lang =='esp'">Nosotros</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" (click)="scrolls()" *ngIf= "lang =='ing'">Services</a>
-        <a class="nav-link" (click)="scrolls()" *ngIf= "lang =='esp'">Servicios</a>
+        <a class="nav-link pointer" (click)="scrolls()" *ngIf= "lang =='ing'">Services</a>
+        <a class="nav-link pointer" (click)="scrolls()" *ngIf= "lang =='esp'">Servicios</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" (click)="scrollcontact()" *ngIf= "lang =='ing'">Contact</a>
-        <a class="nav-link" (click)="scrollcontact()" *ngIf= "lang =='esp'">Contacto</a>
+        <a class="nav-link pointer" (click)="scrollcontact()" *ngIf= "lang =='ing'">Contact</a>
+        <a class="nav-link pointer" (click)="scrollcontact()" *ngIf= "lang =='esp'">Contacto</a>
       </li>
       <li class="nav-item dropdown" aria-labelledby="navbarDropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,7 +39,7 @@
         </a>
         <div class="form-group" >
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" #select  *ngFor="let item of list" [value] ="item.id" (click)="logDropdown(select.value)">{{item.name}}</a>
+          <a class="dropdown-item pointer" #select  *ngFor="let item of list" [value] ="item.id" (click)="logDropdown(select.value)">{{item.name}}</a>
         </div>
       </div>
       </li>
